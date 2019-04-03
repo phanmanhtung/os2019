@@ -1,0 +1,80 @@
+phanmanhtung@phanmanhtung-Vostro-5568:~$ echo hello world
+hello world
+
+phanmanhtung@phanmanhtung-Vostro-5568:~$ passwd
+Changing password for phanmanhtung.
+(current) UNIX password: 
+passwd: Authentication token manipulation error
+passwd: password unchanged
+
+phanmanhtung@phanmanhtung-Vostro-5568:~$ date
+Thứ tư, 03 Tháng tư năm 2019 08:56:31 +07
+
+phanmanhtung@phanmanhtung-Vostro-5568:~$ hostname
+phanmanhtung-Vostro-5568
+
+phanmanhtung@phanmanhtung-Vostro-5568:~$ arch
+x86_64
+
+phanmanhtung@phanmanhtung-Vostro-5568:~$ uname -a
+Linux phanmanhtung-Vostro-5568 4.15.0-46-generic #49~16.04.1-Ubuntu SMP Tue Feb 12 17:45:24 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+
+phanmanhtung@phanmanhtung-Vostro-5568:~$ dmesg
+...
+[100265.521656] thermal thermal_zone7: failed to read out thermal zone (-61)
+[100265.549286] PM: suspend exit
+[100265.891519] ata1: SATA link up 6.0 Gbps (SStatus 133 SControl 300)
+[100265.903639] ata1.00: ACPI cmd ef/10:06:00:00:00:00 (SET FEATURES) succeeded
+[100265.903644] ata1.00: ACPI cmd f5/00:00:00:00:00:00 (SECURITY FREEZE LOCK) filtered out
+[100265.903648] ata1.00: ACPI cmd b1/c1:00:00:00:00:00 (DEVICE CONFIGURATION OVERLAY) filtered out
+[100265.914931] ata1.00: ACPI cmd ef/5a:00:00:00:00:a0 (SET FEATURES) succeeded
+[100265.939166] Bluetooth: hci0: read Intel version: 370810011003110e00
+[100265.939278] Bluetooth: hci0: Intel Bluetooth firmware file: intel/ibt-hw-37.8.10-fw-1.10.3.11.e.bseq
+[100265.976092] ata1.00: ACPI cmd ef/10:06:00:00:00:00 (SET FEATURES) succeeded
+[100265.976099] ata1.00: ACPI cmd f5/00:00:00:00:00:00 (SECURITY FREEZE LOCK) filtered out
+[100265.976104] ata1.00: ACPI cmd b1/c1:00:00:00:00:00 (DEVICE CONFIGURATION OVERLAY) filtered out
+[100265.976302] ata1.00: ACPI cmd 00/00:00:00:00:00:a0 (NOP) rejected by device (Stat=0x51 Err=0x04)
+[100266.013181] ata1.00: configured for UDMA/133
+[100266.255154] Bluetooth: hci0: Intel firmware patch completed and activated
+[100266.397319] IPv6: ADDRCONF(NETDEV_UP): wlp2s0: link is not ready
+[100266.511343] IPv6: ADDRCONF(NETDEV_UP): wlp2s0: link is not ready
+[100266.514269] IPv6: ADDRCONF(NETDEV_UP): enp3s0: link is not ready
+[100266.562270] r8169 0000:03:00.0 enp3s0: link down
+[100266.562376] IPv6: ADDRCONF(NETDEV_UP): enp3s0: link is not ready
+[100266.640067] IPv6: ADDRCONF(NETDEV_UP): wlp2s0: link is not ready
+[100271.454725] wlp2s0: authenticate with 7a:8a:20:55:87:40
+[100271.462031] wlp2s0: send auth to 7a:8a:20:55:87:40 (try 1/3)
+[100271.467692] wlp2s0: authenticated
+[100271.468192] wlp2s0: associate with 7a:8a:20:55:87:40 (try 1/3)
+[100271.471934] wlp2s0: RX AssocResp from 7a:8a:20:55:87:40 (capab=0x411 status=0 aid=10)
+[100271.474712] wlp2s0: associated
+[100271.483479] IPv6: ADDRCONF(NETDEV_CHANGE): wlp2s0: link becomes ready
+[100352.410385] audit: type=1400 audit(1554256456.240:687): apparmor="DENIED" operation="open" profile="/usr/bin/evince" name="/var/lib/snapd/desktop/applications/mimeinfo.cache" pid=20145 comm="evince" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+
+phanmanhtung@phanmanhtung-Vostro-5568:~$ uptime
+ 08:57:18 up 3 days, 15:36,  1 user,  load average: 0,15, 1,26, 1,81
+
+phanmanhtung@phanmanhtung-Vostro-5568:~$ who am i
+
+phanmanhtung@phanmanhtung-Vostro-5568:~$ whoami
+phanmanhtung
+
+phanmanhtung@phanmanhtung-Vostro-5568:~$ who
+phanmanhtung tty7         2019-03-30 17:21 (:0)
+
+phanmanhtung@phanmanhtung-Vostro-5568:~$ id
+uid=1000(phanmanhtung) gid=1000(phanmanhtung) groups=1000(phanmanhtung),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),113(lpadmin),128(sambashare)
+
+phanmanhtung@phanmanhtung-Vostro-5568:~$ last
+wtmp begins Tue Apr  2 08:44:35 2019
+
+phanmanhtung@phanmanhtung-Vostro-5568:~$ finger
+Login         Name           Tty      Idle  Login Time   Office     Office Phone
+phanmanhtung  phanmanhtung   tty7       3d  Mar 30 17:21 (:0)
+
+phanmanhtung@phanmanhtung-Vostro-5568:~$ w
+ 09:01:20 up 3 days, 15:40,  1 user,  load average: 1,35, 1,10, 1,60
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+phanmanh tty7     :0                T717    3days  2:11m  1.67s /sbin/upstart -
+
+
