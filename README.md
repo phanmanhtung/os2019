@@ -10,7 +10,7 @@ Students are expected to:
 Student Info
 =======================
 
-* Name: Phan Mạnh Tùng
-* ID: USTHBI8-160
+* Name:  Phan Mạnh Tùng
+* ID:  USTHBI8-160
 
 
