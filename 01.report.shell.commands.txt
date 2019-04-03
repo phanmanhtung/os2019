@@ -1,3 +1,4 @@
+
 phanmanhtung@phanmanhtung-Vostro-5568:~$ echo hello world
 hello world
 
