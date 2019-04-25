@@ -1,0 +1,29 @@
+phanmanhtung@phanmanhtung-Vostro-5568:~/Desktop/Hello$ ls | grep list
+list1 (3rd copy).txt
+list1 (4th copy).txt
+list1 (5th copy).txt
+list1 (6th copy).txt
+list1 (7th copy).txt
+list1 (8th copy).txt
+list1 (another copy).txt
+list1 (copy).txt
+list1.txt
+
+phanmanhtung@phanmanhtung-Vostro-5568:~/Desktop/Hello$ wc -l /etc/passwd
+41 /etc/passwd
+
+phanmanhtung@phanmanhtung-Vostro-5568:~/Desktop$ free -h | head -2 
+              total        used        free      shared  buff/cache   available
+Mem:           7,7G        3,1G        182M        650M        4,4G        3,6G
+
+phanmanhtung@phanmanhtung-Vostro-5568:~/Desktop$ cat /proc/cpuinfo | grep 'cpu cores' | head -1
+cpu cores	: 2
+
+phanmanhtung@phanmanhtung-Vostro-5568:~/Pictures$ find *.jpeg
+download.jpeg
+strawberryu.jpeg
+
+phanmanhtung@phanmanhtung-Vostro-5568:~/Pictures$ find *.jpeg | wc -l
+2
+
+
