@@ -1,0 +1,60 @@
+phanmanhtung@phanmanhtung-Vostro-5568:~$ ps aux| head -n 10
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.0 185368  5976 ?        Ss   Th0422   0:04 /sbin/init splash
+root         2  0.0  0.0      0     0 ?        S    Th0422   0:00 [kthreadd]
+root         4  0.0  0.0      0     0 ?        I<   Th0422   0:00 [kworker/0:0H]
+root         6  0.0  0.0      0     0 ?        I<   Th0422   0:00 [mm_percpu_wq]
+root         7  0.0  0.0      0     0 ?        S    Th0422   0:01 [ksoftirqd/0]
+root         8  0.0  0.0      0     0 ?        I    Th0422   1:50 [rcu_sched]
+root         9  0.0  0.0      0     0 ?        I    Th0422   0:00 [rcu_bh]
+root        10  0.0  0.0      0     0 ?        S    Th0422   0:00 [migration/0]
+root        11  0.0  0.0      0     0 ?        S    Th0422   0:00 [watchdog/0]
+
+phanmanhtung@phanmanhtung-Vostro-5568:~$ setsid gnome-calculator &>/dev/null
+
+phanmanhtung@phanmanhtung-Vostro-5568:~$ ps -fC gnome-calculator | awk '{print $2}'
+PID
+26803
+
+phanmanhtung@phanmanhtung-Vostro-5568:~$ cat /proc/26803/status | head
+Name:	gnome-calculato
+Umask:	0002
+State:	S (sleeping)
+Tgid:	26803
+Ngid:	0
+Pid:	26803
+PPid:	1515
+TracerPid:	0
+Uid:	1000	1000	1000	1000
+Gid:	1000	1000	1000	1000
+
+phanmanhtung@phanmanhtung-Vostro-5568:~$ kill -STOP 26803
+phanmanhtung@phanmanhtung-Vostro-5568:~$ cat /proc/26803/status | head
+Name:	gnome-calculato
+Umask:	0002
+State:	T (stopped)
+Tgid:	26803
+Ngid:	0
+Pid:	26803
+PPid:	1515
+TracerPid:	0
+Uid:	1000	1000	1000	1000
+Gid:	1000	1000	1000	1000
+
+phanmanhtung@phanmanhtung-Vostro-5568:~$ kill -CONT 26803
+phanmanhtung@phanmanhtung-Vostro-5568:~$ cat /proc/26803/status | head
+Name:	gnome-calculato
+Umask:	0002
+State:	S (sleeping)
+Tgid:	26803
+Ngid:	0
+Pid:	26803
+PPid:	1515
+TracerPid:	0
+Uid:	1000	1000	1000	1000
+Gid:	1000	1000	1000	1000
+
+phanmanhtung@phanmanhtung-Vostro-5568:~$ kill -KILL 26803
+
+
+
