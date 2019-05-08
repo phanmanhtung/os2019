@@ -1,0 +1,4 @@
+ps -o nlwp 19830
+NLWP
+   1
+
