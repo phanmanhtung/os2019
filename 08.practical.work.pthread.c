@@ -46,7 +46,7 @@ item* init(char type, int amount, char unit){
 	return i;
 }
 
-void *produceThread(void* par) {
+void *producerThread(void* par) {
 	item *chicken1=init('0',3,'0');
 	item *chicken2=init('0',4,'1');
 	item *chicken3=init('0',2,'1');
@@ -56,7 +56,7 @@ void *produceThread(void* par) {
 	pthread_exit(NULL);
 }
 
-void *consumeThread(void* par) {
+void *consumerThread(void* par) {
 	printf("Consume 2 chicken wings!\n");
 	consume();
 	consume();
