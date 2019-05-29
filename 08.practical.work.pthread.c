@@ -64,7 +64,6 @@ void *consumerThread(void* par) {
 }
 
 int main() {
-
 	pthread_t tid;
 	printf("Main thread here\n");
 
