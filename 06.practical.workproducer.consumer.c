@@ -14,7 +14,7 @@ int first = 0;
 int last = 0;
 
 void print(){
-	printf("first = %d\t last = %d\n", first, last);
+	printf("first = %d ; last = %d\n", first, last);
 	return;
 }
 
@@ -46,8 +46,8 @@ item* init(char type, int amount, char unit){
 }
 
 int main(){
-	item* number1 = init('4',0,'6');
-	item* number2 = init('3',7,'1');
+	item* number1 = init('1',6,'0');
+	item* number2 = init('0',7,'1');
 	produce(number1);
 	produce(number2);
 	consume();
